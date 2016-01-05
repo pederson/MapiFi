@@ -9,44 +9,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dylan.mapifi.MainPage">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MapiFi"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/strength_text"
-        android:layout_alignStart="@+id/strength_text" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/strength_text"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editText2" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
-        android:layout_alignTop="@+id/strength_text"
+        android:text="Strength (dBm):"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:text="Strength (dBm):" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
+        android:text="GPS:"
         android:layout_below="@+id/editText2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="60dp"
-        android:text="GPS:" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -54,6 +44,57 @@
         android:text="Run"
         android:id="@+id/run_button"
         android:onClick="onRunButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/gps_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/gps_text"
+        android:layout_below="@+id/strength_text"
+        android:layout_alignRight="@+id/strength_text"
+        android:layout_alignEnd="@+id/strength_text"
+        android:layout_alignLeft="@+id/strength_text"
+        android:layout_alignStart="@+id/strength_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/atext"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Accuracy(m):" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/accuracy_text"
+        android:layout_alignBottom="@+id/atext"
+        android:layout_alignLeft="@+id/gps_text"
+        android:layout_alignStart="@+id/gps_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/atext"
+        android:layout_alignEnd="@+id/atext"
+        android:text="IP:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ip_text"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editText2" />
 </RelativeLayout>
