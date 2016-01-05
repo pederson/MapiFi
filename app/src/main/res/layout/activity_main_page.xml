@@ -36,7 +36,7 @@
         android:layout_alignTop="@+id/strength_text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="Strength:" />
+        android:text="Strength (dBm):" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:text="Run"
         android:id="@+id/run_button"
-        android:onClick="onUpdateButton"
+        android:onClick="onRunButton"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
